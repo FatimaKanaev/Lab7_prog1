@@ -6,10 +6,29 @@
  */
 public class LogAnalyzer
 {
+    /* Question 1
+     * 10-14-18 (hr)
+     * 
+     * Question 2
+     * private Person[] people;
+     * 
+     * Question 4
+     * It's often used in fields, constructors and methods.
+     * 
+     * 
+     */
+    
+    
     // Where to calculate the hourly access counts.
     private int[] hourCounts;
     // Use a LogfileReader to access the data.
     private LogfileReader reader;
+    
+    // Question 3
+    private boolean[] vaccant;
+    // Question 5
+    public int[] counts;
+    public boolean[] occupied;
 
     /**
      * Create an object to analyze hourly web accesses.
@@ -21,6 +40,8 @@ public class LogAnalyzer
         hourCounts = new int[24];
         // Create the reader to obtain the data.
         reader = new LogfileReader();
+        //Question 5
+        occupied = new boolean [5000];
     }
 
     /**
