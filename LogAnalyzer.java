@@ -106,5 +106,21 @@ public class LogAnalyzer
     public void printData()
     {
         reader.printData();
+        // Question 11
+        double[] marks = {2.2,4.2,4.7,9.2,4.8};
+        printGreater(marks,4.0);
+    }
+    
+    //Question 11
+    /** * Print all the values in the marks array that are greater than mean.
+        * @param marks An array of mark values.
+        * @param mean The mean (average) mark. */
+        
+    public void printGreater(double[] marks, double mean) { 
+        for(int index = 0; index < marks.length; index++) {
+            if(marks[index] > mean) {
+                System.out.println(marks[index]);
+            } 
+        } 
     }
 }
