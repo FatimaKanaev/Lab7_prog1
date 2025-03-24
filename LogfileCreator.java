@@ -10,7 +10,7 @@ import java.util.*;
 public class LogfileCreator
 {
     private Random rand;
-
+    
     /**
      * Create log files.
      */
